@@ -4,6 +4,10 @@ module.exports = app => {
     user: "root", pass: "123abc", authSource: "admin",
     useNewUrlParser: true,
     useUnifiedTopology: true
+  }, (err) => {
+    if (err) {
+      console.log(err)
+    }
   })
   require('require-all')(__dirname + '/../models')
 }
