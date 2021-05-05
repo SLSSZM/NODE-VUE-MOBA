@@ -1,8 +1,6 @@
 module.exports = app => {
   const mongoose = require('mongoose')
-  mongoose.connect('mongodb://127.0.0.1:27017/node-vue-moba', {
-    user: 'root',
-    pass: '123abc',
+  mongoose.connect('mongodb:root@123abc//127.0.0.1:27017/node-vue-moba?authSource=admin', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
