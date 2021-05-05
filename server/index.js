@@ -7,10 +7,10 @@ app.use(require('cors')())
 // 中间件
 app.use(express.json())
 
-app.use('/', express.static(__dirname + '/dist/web'))
-app.use('/home', express.static(__dirname + '/dist/web'))
-app.use('/admin', express.static(__dirname + '/dist/admin'))
-app.use('/admin/login', express.static(__dirname + '/dist/admin'))
+app.use('/', express.static(__dirname + '/public/web'))
+app.use('/home', express.static(__dirname + '/public/web'))
+app.use('/admin', express.static(__dirname + '/public/admin'))
+app.use('/admin/login', express.static(__dirname + '/public/admin'))
 app.use('/uploads', express.static(__dirname + '/uploads'))
 app.set('secret', 'dfhasdhfisf143r42789670fd')
 
