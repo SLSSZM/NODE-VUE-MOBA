@@ -202,13 +202,16 @@ export default {
 .heroes-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 .hero {
   width: 16%;
   margin: 0 1rem 1rem 0;
+}
+.hero:nth-child(1n) {
+  margin-left: 0.2rem;
 }
 .hero:nth-child(5n) {
   margin-right: 0;
