@@ -1,5 +1,5 @@
 module.exports = {
-  outputDir: __dirname + '/../server/dist/web',
+  outputDir: __dirname + '/../server/public/web',
   configureWebpack: {
     resolve: {
       alias: {
