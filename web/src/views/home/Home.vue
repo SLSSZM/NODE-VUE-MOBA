@@ -111,7 +111,9 @@ export default {
       swiperOptions: {
         pagination: {
           el: '.swiper-pagination'
-        }
+        },
+        autoplay: true,
+        loop: true
       },
       newsCard: [],
       heroesCard: [],
